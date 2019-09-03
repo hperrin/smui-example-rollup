@@ -13,12 +13,12 @@ module.exports = {
   plugins: [
     svelte({
       emitCss: true
-		}),
-		resolve({
-			browser: true,
+    }),
+    resolve({
+      browser: true,
       dedupe: importee => importee === 'svelte' || importee.startsWith('svelte/')
-		}),
-		commonjs(),
+    }),
+    commonjs(),
     postcss({
       extract: true,
       minimize: true,
@@ -32,7 +32,7 @@ module.exports = {
       ]
     })
   ],
-	watch: {
-		clearScreen: false
-	}
+  watch: {
+    clearScreen: false
+  }
 };
