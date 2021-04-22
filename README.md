@@ -1,6 +1,6 @@
 # SMUI Rollup Example
 
-An example project implementing [Svelte Material UI](https://github.com/hperrin/svelte-material-ui) with [Rollup](https://github.com/rollup/rollup).
+An example project implementing [Svelte Material UI](https://github.com/hperrin/svelte-material-ui) with [Rollup](https://github.com/rollup/rollup). (Using the Advanced Styling Method.)
 
 # Get it Running
 
