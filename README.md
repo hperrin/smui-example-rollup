@@ -12,7 +12,7 @@ An example project implementing [Svelte Material UI](https://github.com/hperrin/
 
 # License
 
-Copyright 2019 Hunter Perrin
+Copyright 2021 Hunter Perrin
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
