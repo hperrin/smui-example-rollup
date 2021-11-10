@@ -2,6 +2,7 @@ import svelte from "rollup-plugin-svelte";
 import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
 import postcss from "rollup-plugin-postcss";
+import preprocess from "svelte-preprocess";
 
 module.exports = {
   input: "index.js",
@@ -11,7 +12,9 @@ module.exports = {
     name: "app",
   },
   plugins: [
-    svelte(),
+    svelte({
+      preprocess: preprocess(),
+    }),
     resolve({
       browser: true,
       dedupe: ["svelte"],

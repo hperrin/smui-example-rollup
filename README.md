@@ -2,6 +2,8 @@
 
 An example project implementing [Svelte Material UI](https://github.com/hperrin/svelte-material-ui) with [Rollup](https://github.com/rollup/rollup). (Using the Advanced Styling Method.)
 
+**I can't emphasize this enough, you don't need to use the advanced styling method. The [easy styling method](https://github.com/hperrin/svelte-material-ui/blob/master/SASS.md#easy-styling-method) is _much_ easier!**
+
 # Get it Running
 
 1. Clone the repo.
