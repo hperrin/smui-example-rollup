@@ -1,3 +1,9 @@
+<script>
+  import Button, { Label, Icon } from "@smui/button";
+
+  let clicked = 0;
+</script>
+
 <div class="container">
   <Button on:click={() => clicked++}>
     <Icon class="material-icons">thumb_up</Icon>
@@ -11,12 +17,6 @@
     {/if}
   </p>
 </div>
-
-<script>
-  import Button, { Label, Icon } from "@smui/button/styled";
-
-  let clicked = 0;
-</script>
 
 <style>
   .grayed {

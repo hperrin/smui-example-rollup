@@ -1,7 +1,6 @@
 import svelte from "rollup-plugin-svelte";
 import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
-import postcss from "rollup-plugin-postcss";
 import preprocess from "svelte-preprocess";
 
 module.exports = {
@@ -14,24 +13,13 @@ module.exports = {
   plugins: [
     svelte({
       preprocess: preprocess(),
+      emitCss: false,
     }),
     resolve({
       browser: true,
       dedupe: ["svelte"],
     }),
     commonjs(),
-    postcss({
-      extract: true,
-      minimize: true,
-      use: [
-        [
-          "sass",
-          {
-            includePaths: ["./theme", "./node_modules"],
-          },
-        ],
-      ],
-    }),
   ],
   watch: {
     clearScreen: false,

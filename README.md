@@ -1,8 +1,6 @@
 # SMUI Rollup Example
 
-An example project implementing [Svelte Material UI](https://github.com/hperrin/svelte-material-ui) with [Rollup](https://github.com/rollup/rollup). (Using the Advanced Styling Method.)
-
-# I can't emphasize this enough, you don't need to use the advanced styling method. The [easy styling method](https://github.com/hperrin/svelte-material-ui/blob/master/SASS.md#easy-styling-method) is _much_ easier!
+An example project implementing [Svelte Material UI](https://github.com/hperrin/svelte-material-ui) with [Rollup](https://github.com/rollup/rollup).
 
 # Get it Running
 
@@ -14,7 +12,7 @@ An example project implementing [Svelte Material UI](https://github.com/hperrin/
 
 # License
 
-Copyright 2021 Hunter Perrin
+Copyright 2021-2022 Hunter Perrin
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

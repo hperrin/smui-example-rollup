@@ -1,27 +1,30 @@
 {
   "name": "smui-example-rollup",
   "version": "0.0.1",
-  "description": "An example project implementing Svelte Material UI (Advanced Styling) with Rollup.",
+  "description": "An example project implementing Svelte Material UI with Rollup.",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "serve": "serve .",
     "watch": "rollup -c rollup.config.js --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run styles-light && npm run styles-dark",
+    "styles-light": "smui-theme compile dist/site.css -i style",
+    "styles-dark": "smui-theme compile dist/site-dark.css -i style/dark"
   },
   "author": "Hunter Perrin <hperrin@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@material/typography": "^11.0.0",
-    "@smui/button": "^5.0.0",
-    "rollup": "^2.59.0",
+    "@material/typography": "^13.0.0",
+    "@smui/button": "^6.0.0-beta.11",
+    "rollup": "^2.63.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-postcss": "^4.0.1",
     "rollup-plugin-svelte": "^7.1.0",
-    "sass": "^1.43.4",
+    "sass": "^1.45.2",
     "serve": "^13.0.2",
-    "svelte": "^3.44.1",
-    "svelte-preprocess": "^4.9.8"
+    "smui-theme": "^6.0.0-beta.11",
+    "svelte": "^3.44.3",
+    "svelte-preprocess": "^4.10.1"
   }
 }
